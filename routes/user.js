@@ -55,7 +55,7 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   const user = await User.findById(req.params.id);
-  console.log(user);
+
   if (user) {
     user.delete();
     res.status(200);

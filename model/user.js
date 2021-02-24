@@ -4,4 +4,4 @@ const userSchema = new mongoose.Schema({
   name: String,
 });
 
-mongoose.model('User', userSchema)
+mongoose.model('User', userSchema);
